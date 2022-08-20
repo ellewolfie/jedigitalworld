@@ -1,26 +1,30 @@
-/* .img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-} */
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 .phone{
-  position:absolute;
-  height:200px;
-  width:200px;
-  top: 40px;
-  left : 40px;
-  z-index: 1;
+    position:absolute;
+    margin-left: 30%;
+    height: 100%;
+    width: 35%;
+    z-index: 1;
 }
 
 .fondo {
-    background-image: url("img/bg.jpeg");
-    /* position: absolute; */
-    height:300px;
-    width:300px;
-    background-position: absolute;
-    /* background-repeat: no-repeat; */
-    /* background-size: 100% 100%; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .phone {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left: 0;
+    margin-top: 35%;
+    height: 60%;
+  }
 }
