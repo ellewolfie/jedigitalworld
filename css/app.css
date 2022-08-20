@@ -1,6 +1,26 @@
-.img {
+/* .img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+} */
+
+.phone{
+  position:absolute;
+  height:200px;
+  width:200px;
+  top: 40px;
+  left : 40px;
+  z-index: 1;
+}
+
+.fondo {
+    background-image: url("img/bg.jpeg");
+    /* position: absolute; */
+    height:300px;
+    width:300px;
+    background-position: absolute;
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    z-index: -1;
 }
