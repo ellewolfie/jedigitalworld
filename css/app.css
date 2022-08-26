@@ -3,28 +3,48 @@ body {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+
+img {
+  width: 30%;
+  height: 100%;
 }
 
-.phone{
-    position:absolute;
-    margin-left: 30%;
-    height: 100%;
-    width: 35%;
-    z-index: 1;
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
 }
 
-.fondo {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+.box-ground {
+  position: absolute;
+  background-image: url("../img/bg.jpeg");
+  margin-left: 35%;
+  width: 24%;
+  height: 100%;
+  z-index: -1;
 }
+
+.box-phone {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 37%;
+  width: 63%;
+  height: 80%;
+  z-index: 1;
+}
+
 
 @media screen and (max-width: 800px) {
-  .phone {
+  .box-ground {
+    width: 100%; /* The width is 100%,when the viewport is 800px or smaller */
+    margin-left: 0;
+    height: 100%;
+  }
+  .box-phone {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     margin-left: 0;
-    margin-top: 35%;
-    height: 60%;
+    margin-top: 0;
+    height: 20%;
   }
 }
